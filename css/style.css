@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif !important; 
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #1d273b;
+    font-weight: 300 !important;
+}
+
+.contenedor, .contenedor1{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor1{
+    padding: 60px 0;
+}
+
+/*                  HEADER                  */
+
+.contenedor, .questions, .results, .services{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor > img, .questions > img, .services > img{
+    width: 650px;
+}
+
+h1{
+    font-size: 50px;
+}
+.textos-header, .textos-questions, .box-skills{
+    width: 500px;
+    margin: 0 0  0 30px;
+}
+.contenedor p, .questions p, .box-skills{
+    font-weight: 100 !important;
+    margin-top: 14px;
+    color: #5D6678;
+}
+.contenedor .textos-header a, .questions a{
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #1FDE82;
+    text-align: center;
+    color: #ffffff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400 !important;
+    font-size: 14px;
+    border-radius: 7px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130, .45);
+    transition: 0.2s;
+}
+
+.contenedor a:hover , .questions a:hover{
+    color: #5D6678;
+    transition: 0.2s;
+}
+
+/*                  ABOUT US                  */
+
+.about-us{
+    background: #f2f2f2;
+}
+.titulo{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.contenedor-articulo{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.articulo{
+    width: 29%;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    padding: 45px 30px 60px 30px;
+}
+.articulo:hover{
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+    transition: 0.5s;
+}
+
+.articulo > i{
+    font-size: 40px;
+    color: #fff;
+    background: #1FDE82;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 0 8px 20px rgba(31, 222, 130, .45);
+
+}
+
+.articulo > h3{
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.articulo > p{
+    color: #5D6678;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    font-weight: 100 !important;
+}
+
+.results{
+    width: 100%;
+    height: 380px;
+}
+.results-textos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.results-textos > p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.results-textos  > h4{
+    color: #fff;
+    margin-bottom: 30px;
+
+}
+.box-skills{
+    padding-left: 120px;
+}
+.box-skills i{
+    font-size: 30px;
+    color: #1FDE82;
+    margin-top: 0px;
+}
+
+.test{
+    display: flex;
+    align-content: center;
+    padding: 10px;
+}
+
+.test h4{
+    padding-left: 8px;
+    font-size: 1.7rem;
+}
+.skill-titulo{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 370px;
+    padding-top: 30px;
+
+}
+.partFooter, .partFooter .social-media{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.partFooter h4{
+    color: #fff;
+    font-size: 2rem;
+}
+.partFooter a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+}
+
+
+.partFooter .social-media i{
+    font-size: 30px;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.partFooter .social-media i:hover{
+    color: rgb(90, 89, 89);
+    border: 1px solid rgb(90, 89, 89);
+    border-radius: 50%;
+}
+.partFooter a:hover{
+    color: rgb(90, 89, 89);
+}
+
+@media (max-width: 600px){
+
+    .contenedor .textos-questions, .contenedor .textos-header, .contenedor .services .box-skills{
+        text-align: center;
+        margin: -30px;
+    } 
+    .contenedor, .questions, .results{
+        height: 90vh !important;
+    }
+    .results{
+        height: 100% !important;
+        font-size: 25px !important;
+        padding: 30px;
+    }
+    .contenedor .textos-header{
+        margin-top: -80px;
+    }
+    .results .contenedor .results-textos{
+        margin-top: 100px;
+        margin-bottom: 100PX;
+    }
+    .results .contenedor .results-textos h4{
+        font-size: 30px;
+    }
+    .results .contenedor .results-textos p{
+        color: white;
+        margin-top: -40PX;
+    }
+    .questions, .services{
+        width: 90%;
+        margin-top: 80px;
+    }
+    h1{
+        font-size: 42px !important;
+    }
+    .contenedor .textos-header p{
+        display: none;
+    }
+    .contenedor-articulo, .contenedor .services{
+        flex-direction: column;
+        align-content: center;
+    }
+    .contenedor .services{
+        display: flex;
+        align-content: center;
+    }
+    .contenedor, .contenido-header{
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+    .contenedor, .contenido-header a{
+        margin-bottom: 10px;
+    }
+    .contenedor img, .contenedor .services img{
+        height: 40%;
+        padding-bottom: 0px;
+    }
+    .contenedor .services img{
+        width: 100%;
+        margin-top: -70px;
+    }
+    .contenedor-articulo .articulo{
+        width: 85%;
+    }
+    .contenedor > .textos-header, .contenedor > .textos-questions{
+        width: 85%;
+    }
+    .contenedor > .textos-header{
+        padding-bottom: 25px;
+    }
+    .contenedor > .textos-questions{
+        padding-top: -80px;
+    }
+    footer{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .partFooter{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .partFooter > .social-media{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: -15px;
+    }
+
+}
